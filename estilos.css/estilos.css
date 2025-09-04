@@ -1,0 +1,428 @@
+
+
+body{
+    margin: 0rem;
+    padding: 0rem; 
+    box-sizing: border-box;
+}
+
+
+
+/*CSS de Index*/
+
+
+
+header{
+    width: 100%;
+    
+}
+
+
+.navbar{
+    margin: 0rem;
+    padding: .0625rem;
+    text-decoration: none;
+    background-color: #9E2A2B;
+    
+    
+}
+
+
+
+.menu{
+    width: 100%;
+     word-spacing: 1.8rem;
+}
+
+.menu li {
+    
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    word-spacing: 6.25rem
+}
+
+a {
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-style: none;
+    color: rgb(250, 246, 246);
+    text-decoration: none;
+    
+}
+
+
+/**INDEX**/ 
+
+main{
+    
+    width: 100%;
+    height: 100%;
+    
+    
+    
+    
+    
+}
+
+
+.contenedor{
+     
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #9E2A2B;
+    
+
+}
+
+
+
+.texto{
+    
+    width: 50%; 
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    height: auto;
+    
+}
+
+
+
+.titulo{
+    
+    
+    text-align: center;
+    font-size: 4rem;
+    -webkit-text-stroke-width: .125rem;
+    -webkit-text-stroke-color: black;
+    
+}
+
+.titulo-central{
+    
+    text-align: center;
+    font-size: 10rem;
+    -webkit-text-stroke-width: .125rem;
+    -webkit-text-stroke-color: black;
+
+}
+
+
+
+.encuentratuviaje {
+    
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding: 1.875rem;
+    border-radius: 1.875rem;
+    height: .3125rem;
+
+}
+
+
+
+/*lugares*/
+
+
+
+.lugares{
+    
+    margin: 0%;
+    padding: 1.25rem;
+    
+    background-color: #F5F1E6;
+    
+}
+
+.explorajapon{
+
+    
+    width: 100%;
+   
+}
+
+
+.lugares div h2{
+    
+    font-size: 4.375rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    color: #9E2A2B;
+    text-align: center;
+}
+
+.lugares div h3{
+    
+    text-align: center;    
+    font-size: 1.5625rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 3.75rem;
+    
+}
+
+
+.contenedor-cajas{
+    display: flex;
+    width: 100%;
+}
+
+
+.cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+
+
+.cajas img{
+
+    margin: 0rem 3.125rem;
+    width: 18.75rem;
+    height: 9.375rem;
+    border-radius: .625rem;
+    border: .125rem solid black;
+}
+
+
+.cajas p{
+    
+    text-align: center;
+    font-size: .9375rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+
+/*hoteles*/
+
+.hoteles{
+    padding-top: 1px;
+    background-color: #F5F1E6;
+    
+}
+
+
+
+.hoteles h2{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.hoteles h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+.contendorhoteles{
+    
+    display: flex;
+    width: 100%;
+    
+}
+
+.cajashoteles{
+
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+    
+    
+}
+
+.cajashoteles div{
+    border: .1875rem solid black;
+    border-radius: .9375rem;
+    margin: .625rem 1.875rem;
+    text-align: center;
+}
+
+.hoteles img{
+    
+    border-radius: .625rem;
+    border: .0625rem solid black;
+    width: 15.625rem;
+    height: 9.375rem;
+    
+}
+
+.hoteles h4{
+    
+    text-align: center;
+    font-size: .9375rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;    
+}
+
+.hoteles ul{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    list-style: none;
+    font-size: .625rem;
+    text-align: start;
+}
+
+.hoteles input{
+    width: 50%;
+    
+    border-radius: 3.125rem;
+}
+
+
+
+/*agentes*/
+
+
+.agentes{
+    padding: .0625rem;
+    width: 100%;
+    height: auto;
+    background-color: #F5F1E6;
+    
+}
+
+.contenedoragentes{
+    background-color:  #F5F1E6;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr)) ;
+    gap: 12rem;
+    grid-template-rows: 15.625rem 12.5rem auto;
+    justify-items: center;
+    align-items: start;
+    align-content: space-between;
+    text-align: center;
+
+}
+
+
+
+.agentes h1{
+    font-size: 3.75rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.agentes h2{
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.agentes h3{
+    font-size: 30px;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+
+.agentes h4{
+    font-size: 1.25rem;
+    font-family: "Manrope", sans-serif;;
+    font-weight: 500;
+    width: 12.5rem;
+    text-align: center;
+}
+
+.contenedoragentes input{
+    width: 50%;
+    background-color: white;
+    border: .1875rem solid black;
+    border-radius: .9375rem;
+}
+
+.agentes img{
+    border-radius: 25rem;
+    border: .0625rem solid black;
+}
+
+
+
+/*contacto*/
+
+
+
+.contacto{
+    
+    background-image: url(../assets/contacto/istockphoto-1290573524-612x612.jpg);
+}
+
+.contactofondo{
+    margin: 10rem 0rem;
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-evenly;
+
+    align-items: center;
+    
+}
+
+
+.contacto h1{
+    
+    background-color: #ffffff98;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 3.125rem;
+    color: red;
+    width: 28.125rem;
+    text-align: center;
+}
+
+.planilla{
+
+    font-size: 1.5625rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    background-color:rgba(0, 0, 0, 0.678);
+    padding: 1.25rem;
+    color: white;
+    text-align: center;
+    width: 28.125rem;
+    height: 28.125rem;
+    border-radius: 3.125rem;
+
+}
+
+.planilla p{
+    margin: .3125rem;
+    
+}
+
+.contacto input{
+    
+    margin: 0;
+    padding: .625rem;
+    width: 21.875rem;
+    height: 1.875rem;
+    border-radius: .9375rem;
+}
+
+
+
+@media(max-width:40rem){
+    .contenedoragentes{
+        grid-template-columns: 1fr;
+        
+    }
+}
+
