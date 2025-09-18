@@ -1,0 +1,353 @@
+/*primero los utilities*/
+
+@import "./utilities/variables";
+@import "./utilities/mixing";
+@import "./utilities/function";
+@import "./utilities/maps";
+
+
+/*segundo los archivos base*/
+
+@import "./base/_reset.scss";
+
+
+/*tercero layout*/
+
+
+/*cuarto componentes*/
+
+@import "./components/nav";
+@import "./components/card";
+
+/*por ultimo los media query
+si es responsive web desing =>  decreciente
+si es mobile first => creciente
+
+*/
+
+
+
+
+
+
+
+/**INDEX**/
+
+.index {
+    background-image: url(../assets/inicio/japon-4k-qbc6mlnwowjbszld.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .navbar-index {
+        background-color: #ffffff00;
+    }
+}
+
+.contenedor {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+    .texto {
+
+        justify-content: center;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+
+
+        .titulo {
+
+            text-align: center;
+            justify-content: center;
+            font-size: 4rem;
+            -webkit-text-stroke-width: .125rem;
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+
+            input {
+
+
+
+                height: .3125rem;
+                width: 50%;
+
+
+            }
+
+        }
+    }
+}
+
+/*lugares*/
+
+
+
+.lugares {
+
+    margin-top: 5rem;
+    background-color: #ffffff;
+
+    .explorajapon {
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        color: #9E2A2B;
+        text-align: center;
+
+        h2 {
+            font-size: 4.375rem;
+
+            h3 {
+                font-size: 1.5625rem;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                padding: 3.75rem;
+
+            }
+        }
+    }
+}
+
+
+
+
+/*hoteles*/
+
+.hoteles {
+    margin-top: 5rem;
+    background-color: #ffffff;
+    text-align: center;
+
+
+    h2 {
+        font-size: 60px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        text-align: center;
+
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            text-align: center;
+
+        }
+    }
+}
+
+.contendorhoteles {
+    
+    width: 50%;
+    
+}
+    .cajashoteles {
+        justify-content: center;
+       display: flex;
+       flex-wrap: wrap;
+        margin-top: 2rem;
+        
+    }
+        .cajashoteles div{
+
+            
+            border: .1875rem solid black;
+            border-radius: .9375rem;
+            margin: .625rem 1.875rem;
+            text-align: center;
+        }       
+
+            div img {
+                
+                border-radius: .625rem;
+                border: .0625rem solid black;
+                width: 18.75rem;
+                height: 12.5rem;
+            }       
+
+                h4 {
+
+                    text-align: center;
+                    font-size: .9375rem;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-weight: bolder;
+                }   
+
+                    ul {
+                        
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bolder;
+                        list-style: none;
+                        font-size: .625rem;
+                        text-align: center;
+                    }   
+
+                        
+
+                        input {
+                            width: 50%;
+                            border-radius: 3.125rem;
+
+                }
+           
+
+
+
+    /*agentes*/
+
+
+    .agentes {
+
+        margin-top: 5rem;
+    }
+
+    .contenedoragentes {
+        margin-top: 3.125rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+        gap: 12rem;
+        grid-template-rows: 15.625rem 12.5rem auto;
+        justify-items: center;
+        align-items: start;
+        align-content: space-between;
+        text-align: center;
+
+    }
+
+
+
+    .agentes h1 {
+        font-size: 3.75rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .agentes h2 {
+        font-size: 2.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .agentes h3 {
+        font-size: 30px;
+        font-family: "Manrope", sans-serif;
+        font-weight: bold;
+    }
+
+    .agentes h4 {
+        font-size: 1.25rem;
+        font-family: "Manrope", sans-serif;
+        ;
+        font-weight: 500;
+        width: 12.5rem;
+        text-align: center;
+    }
+
+    .contenedoragentes input {
+        width: 50%;
+        background-color: white;
+        border: .1875rem solid black;
+        border-radius: .9375rem;
+    }
+
+    .agentes img {
+        border-radius: 25rem;
+        border: .0625rem solid black;
+    }
+
+
+
+    /*contacto*/
+
+    .navbar-contacto {
+        background-color: #ffffffab;
+    }
+
+    .contacto {
+        margin-top: 5rem;
+        background-image: url(../assets/contacto/istockphoto-1290573524-612x612.jpg);
+    }
+
+    .contactofondo {
+
+        width: 100%;
+        min-height: 50vh;
+        margin-top: 10rem;
+        gap: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .titulo-contacto {
+
+
+        width: 25rem;
+        height: 21.875rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 1.875rem;
+        color: red;
+        text-align: center;
+
+    }
+
+    .titulo-contacto {
+        background-color: #ffffff98;
+    }
+
+    .formulario {
+
+        width: 25rem;
+        height: 21.875rem;
+        font-size: 1.5625rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        background-color: rgba(0, 0, 0, 0.678);
+        padding: 1.25rem;
+        color: white;
+        text-align: center;
+
+        border-radius: 3.125rem;
+
+    }
+
+    .planilla p {
+        margin: .3125rem;
+
+    }
+
+    .contacto input {
+
+        margin: 0;
+        padding: .625rem;
+        width: 21.875rem;
+        height: 1.875rem;
+        border-radius: .9375rem;
+    }
+
+
+
+    @media(max-width:40rem) {
+        .body {
+            grid-template-rows: 3.125rem 3.125rem 3.125rem 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "header"
+                "main"
+                "footer";
+
+        }
+    }

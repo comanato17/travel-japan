@@ -1,0 +1,19 @@
+{
+  "name": "pagina-travel-japan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comanato17/travel-japan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comanato17/travel-japan/issues"
+  },
+  "homepage": "https://github.com/comanato17/travel-japan#readme"
+}

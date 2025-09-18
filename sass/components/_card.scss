@@ -1,0 +1,35 @@
+.contenedor-cajas {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6.25rem;
+
+
+
+
+    .cajas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3.125rem;
+        text-align: center;
+
+
+        img {
+
+            margin: 0rem 3.125rem;
+            width: 18.75rem;
+            height: 9.375rem;
+            border-radius: .625rem;
+            border: .125rem solid black;
+
+
+            .cajas p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bolder;
+            }
+        }
+    }
+}

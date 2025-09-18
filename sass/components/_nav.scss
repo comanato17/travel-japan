@@ -1,0 +1,32 @@
+nav {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: .625rem;
+    flex-wrap: wrap;
+    margin: 10px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+
+    ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bolder;
+                font-size: 1.25rem;
+                font-style: none;
+                color: rgb(0, 0, 0);
+
+
+            }
+        }
+    }
+}
