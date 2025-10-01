@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*primero los utilities*/
 /*segundo los archivos base*/
 * {
@@ -7,159 +8,134 @@
 }
 
 /*tercero layout*/
-/*cuarto componentes*/
-nav {
-  text-decoration: none;
-  background-color: #ffffff;
-  padding: 0.625rem;
-  flex-wrap: wrap;
-  margin: 10px;
-  top: 0;
-  position: fixed;
+footer {
+  font-size: 10px;
   width: 100%;
-}
-nav ul {
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem;
-}
-nav ul li {
+  justify-content: space-around;
+  text-align: center;
+  text-decoration: none;
   list-style: none;
-}
-nav ul li a {
-  text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bolder;
-  font-size: 1.25rem;
-  font-style: none;
-  color: rgb(0, 0, 0);
+  background-color: rgb(255, 71, 71);
+  position: fixed;
+  bottom: 0;
 }
 
-.contenedor-cajas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 6.25rem;
-}
-.contenedor-cajas .cajas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3.125rem;
-  text-align: center;
-}
-.contenedor-cajas .cajas img {
-  margin: 0rem 3.125rem;
-  width: 18.75rem;
-  height: 9.375rem;
-  border-radius: 0.625rem;
-  border: 0.125rem solid black;
-}
-.contenedor-cajas .cajas img .cajas p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
-}
-
-/*por ultimo los media query
-si es responsive web desing =>  decreciente
-si es mobile first => creciente
-
-*/
-/**INDEX**/
-.index {
-  background-image: url(../assets/inicio/japon-4k-qbc6mlnwowjbszld.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.index .navbar-index {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+body {
   min-height: 100vh;
-}
-.contenedor .texto {
-  justify-content: center;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(255, 255, 255);
-}
-.contenedor .texto .titulo {
-  text-align: center;
-  justify-content: center;
-  font-size: 4rem;
-  -webkit-text-stroke-width: 0.125rem;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
-}
-.contenedor .texto .titulo input {
-  height: 0.3125rem;
-  width: 50%;
+  padding-bottom: 60px;
 }
 
-/*lugares*/
-.lugares {
-  margin-top: 5rem;
-  background-color: #ffffff;
+/*cuarto componentes*/
+.bodyagentes header {
+  text-align: right;
+  padding: 1.25rem;
 }
-.lugares .explorajapon {
-  width: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
-  color: #9E2A2B;
+.bodyagentes header a {
+  text-decoration: none;
+  margin-left: 1.25rem;
+  color: #333;
+  font-size: 0.9375rem;
+  transition: color 0.3s;
+}
+.bodyagentes header a:hover {
+  color: #c0392b;
+}
+.bodyagentes h1 {
   text-align: center;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.75rem;
+  margin: 30px 0 10px;
 }
-.lugares .explorajapon h2 {
-  font-size: 4.375rem;
+.bodyagentes p.sub {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 2.5rem;
+  color: #555;
 }
-.lugares .explorajapon h2 h3 {
-  font-size: 1.5625rem;
-  font-family: "Times New Roman", Times, serif;
+
+.agentescaja {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+}
+
+.agentes {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.agentes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.agentes img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #c0392b;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.agentes h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 3.75rem;
 }
-
-/*hoteles*/
-.hoteles {
-  margin-top: 5rem;
-  background-color: #ffffff;
-  text-align: center;
+.agentes p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
 }
-.hoteles h2 {
-  font-size: 60px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: lighter;
-  text-align: center;
+.agentes button {
+  margin-top: 12px;
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
-.hoteles h2 h3 {
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: lighter;
-  text-align: center;
-}
-
-.contendorhoteles {
-  width: 50%;
+.agentes button:hover {
+  background: #a93226;
 }
 
 .cajashoteles {
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  gap: 3.125rem;
+  text-align: center;
+  margin: 50px 20%;
+  justify-content: center;
 }
 
 .cajashoteles div {
-  border: 0.1875rem solid black;
-  border-radius: 0.9375rem;
-  margin: 0.625rem 1.875rem;
-  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.cajashoteles div:hover {
+  border-radius: 0.625rem;
+  border: 0.0625rem solid black;
+  transform: scale(1.15);
+  /* Escala la card un 5% */
+  transition: transform 0.15s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Añade una sombra */
+  transition: box-shadow 0.9s ease;
 }
 
 div img {
@@ -185,133 +161,391 @@ ul {
 }
 
 input {
+  margin-top: 12px;
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input :hover {
+  background: #a93226;
   width: 50%;
   border-radius: 3.125rem;
 }
 
-/*agentes*/
-.agentes {
-  margin-top: 5rem;
+nav {
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 0.625rem;
+  flex-wrap: wrap;
+  top: 0;
+  position: static;
+  width: 100%;
 }
-
-.contenedoragentes {
-  margin-top: 3.125rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
-  gap: 12rem;
-  grid-template-rows: 15.625rem 12.5rem auto;
-  justify-items: center;
-  align-items: start;
-  align-content: space-between;
-  text-align: center;
+nav ul {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
 }
-
-.agentes h1 {
-  font-size: 3.75rem;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: lighter;
-  text-align: center;
+nav ul li {
+  list-style: none;
 }
-
-.agentes h2 {
-  font-size: 2.5rem;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: lighter;
-  text-align: center;
-}
-
-.agentes h3 {
-  font-size: 30px;
-  font-family: "Manrope", sans-serif;
-  font-weight: bold;
-}
-
-.agentes h4 {
+nav ul li a {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
   font-size: 1.25rem;
-  font-family: "Manrope", sans-serif;
-  font-weight: 500;
-  width: 12.5rem;
+  font-style: none;
+  color: rgb(0, 0, 0);
+}
+
+/* ===== Grid de lugares ===== */
+.lugaresgeneral {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+}
+
+/* ===== Tarjetas ===== */
+.cajalugar {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.cajalugar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.cajalugar:hover img {
+  transform: scale(1.05);
+}
+.cajalugar img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  display: block;
+}
+
+.nombrelugar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
   text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 1px;
 }
 
-.contenedoragentes input {
-  width: 50%;
-  background-color: white;
-  border: 0.1875rem solid black;
-  border-radius: 0.9375rem;
+.fechas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.agentes img {
-  border-radius: 25rem;
-  border: 0.0625rem solid black;
+.buscadorfechas {
+  background: rgba(255, 255, 255, 0.7333333333);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9375rem;
+  max-width: 37.5rem;
 }
 
-/*contacto*/
-.navbar-contacto {
-  background-color: rgba(255, 255, 255, 0.6705882353);
+.buscador {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 12.5rem;
+}
+
+.field label {
+  font-size: 0.875rem;
+  text-align: left;
+  color: #161616;
+  margin-bottom: 0.375rem;
+}
+
+.field input {
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  color: #000000;
+  cursor: pointer;
+}
+
+.buscar {
+  background: #264653;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.125rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  flex: 1;
+  transition: background 0.3s;
+}
+
+.buscar:hover {
+  background: #129283;
 }
 
 .contacto {
-  margin-top: 5rem;
-  background-image: url(../assets/contacto/istockphoto-1290573524-612x612.jpg);
+  font-family: "Noto Sans JP", Arial, sans-serif;
+  background: #f8f6f2;
+  background-image: url("https://images.unsplash.com/photo-1554797589-7241bb691973");
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
 }
 
-.contactofondo {
+.contacto header {
+  text-align: right;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.contacto header a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.contacto header a:hover {
+  color: #c0392b;
+  /* rojo japonés */
+}
+
+.contacto h1 {
+  text-align: center;
+  font-size: 22px;
+  margin: 1.875rem auto;
+  max-width: 700px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: black;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+form input,
+form textarea {
   width: 100%;
-  min-height: 50vh;
-  margin-top: 10rem;
-  gap: 5rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 16px;
+  background: #fafafa;
+  transition: border 0.2s, background 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #c0392b;
+  background: #fff;
+  outline: none;
+}
+
+form button {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #a93226;
+}
+
+.hero-img {
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.973);
+}
+
+/*por ultimo los media query
+si es responsive web desing =>  decreciente
+si es mobile first => creciente
+
+*/
+@media (max-width: 480px) {
+  .buscadorfechas {
+    flex-direction: column;
+  }
+  .buscar {
+    width: 100%;
+  }
+}
+/**INDEX**/
+.index {
+  background-image: linear-gradient(rgba(243, 98, 98, 0.185)), url(../assets/inicio/japon-4k-qbc6mlnwowjbszld.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.index .navbar-index {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+.contenedor .texto {
+  margin-top: 6rem;
+  justify-content: center;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  color: rgb(255, 255, 255);
+}
+.contenedor .texto .titulo {
+  justify-content: center;
+  font-size: clamp(30px, 15vw, 15rem);
+  text-align: center;
+}
 
-.titulo-contacto {
-  width: 25rem;
-  height: 21.875rem;
+/*lugares*/
+.lugares {
+  font-family: "Noto Sans JP", Arial, sans-serif;
+  background: #ffffff;
+  padding: 0;
+  color: #333;
+}
+
+.lugares header {
+  text-align: right;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.lugares header a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.lugares header a:hover {
+  color: #c0392b;
+}
+
+.lugares h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 0 10px;
+  color: #c0392b;
+  letter-spacing: 2px;
+  font-family: "Noto Serif JP", serif;
+}
+
+.lugares p.subtitulo {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/*hoteles*/
+.hoteles {
+  font-family: "Noto Serif JP", serif;
+  background-color: #fff;
+  text-align: center;
+}
+.hoteles h2 {
+  font-size: 60px;
+  font-weight: lighter;
+  text-align: center;
+}
+.hoteles h2 h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/*agentes*/
+.agentes {
+  font-family: "Noto Sans JP", Arial, sans-serif;
+  background: #f8f6f2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.agentes nav {
+  background-color: #f8f6f2;
+}
+
+/*contacto*/
+.navbar-contacto {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.contacto {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactofondo {
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+.contactofondo .titulo-contacto {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 1.875rem;
-  color: red;
-  text-align: center;
-}
-
-.titulo-contacto {
-  background-color: rgba(255, 255, 255, 0.5960784314);
-}
-
-.formulario {
-  width: 25rem;
-  height: 21.875rem;
-  font-size: 1.5625rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
-  background-color: rgba(0, 0, 0, 0.678);
-  padding: 1.25rem;
-  color: white;
-  text-align: center;
-  border-radius: 3.125rem;
-}
-
-.planilla p {
-  margin: 0.3125rem;
-}
-
-.contacto input {
-  margin: 0;
-  padding: 0.625rem;
-  width: 21.875rem;
-  height: 1.875rem;
-  border-radius: 0.9375rem;
-}
-
-@media (max-width: 40rem) {
-  .body {
-    grid-template-rows: 3.125rem 3.125rem 3.125rem 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "footer";
-  }
+  font-size: 1.25rem;
+  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=estilos.css.map */

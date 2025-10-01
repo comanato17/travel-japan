@@ -1,35 +1,51 @@
-.contenedor-cajas {
+/* ===== Grid de lugares ===== */
+.lugaresgeneral {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+}
 
+/* ===== Tarjetas ===== */
+.cajalugar {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 6.25rem;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 
-
-
-
-    .cajas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3.125rem;
-        text-align: center;
-
-
-        img {
-
-            margin: 0rem 3.125rem;
-            width: 18.75rem;
-            height: 9.375rem;
-            border-radius: .625rem;
-            border: .125rem solid black;
-
-
-            .cajas p {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-weight: bolder;
-            }
-        }
+    img {
+      transform: scale(1.05);
     }
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    display: block;
+  }
+}
+
+.nombrelugar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 1px;
 }

@@ -1,0 +1,58 @@
+.fechas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buscadorfechas {
+    background: #ffffffbb;
+    padding: 1.25rem;
+    border-radius: .75rem;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: .9375rem;
+    max-width: 37.5rem;
+}
+
+.buscador {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 12.5rem;
+}
+
+.field label {
+    font-size: .875rem;
+    text-align: left;
+    color: #161616;
+    margin-bottom: .375rem;
+}
+
+.field input {
+    padding: .625rem;
+    border: .0625rem solid #ccc;
+    border-radius: .5rem;
+    font-size: .9375rem;
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+.buscar {
+    background: #264653;
+    color: white;
+    border: none;
+    padding: .75rem 1.125rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    flex: 1;
+    transition: background 0.3s;
+}
+
+.buscar:hover {
+    background: #129283;
+}
+

@@ -1,0 +1,102 @@
+.contacto {
+    font-family: "Noto Sans JP", Arial, sans-serif;
+    background: #f8f6f2;
+    background-image: url("https://images.unsplash.com/photo-1554797589-7241bb691973");
+margin: 0;
+padding: 0;
+background-position: center;
+background-size: cover;
+
+}
+
+.contacto header {
+    text-align: right;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.contacto header a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.contacto header a:hover {
+    color: #c0392b;
+    /* rojo japonés */
+}
+
+
+.contacto h1 {
+    text-align: center;
+    font-size: 22px;
+    margin: 1.875rem auto;
+    max-width: 700px;
+    line-height: 1.4;
+    font-weight: bold;
+    color: black;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    background: #fff;
+    
+            
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #444;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 16px;
+    background: #fafafa;
+    transition: border 0.2s, background 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #c0392b;
+    background: #fff;
+    outline: none;
+}
+
+form button {
+    background: #c0392b;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #a93226;
+}
+
+.hero-img {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.973);
+}
+
